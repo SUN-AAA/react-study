@@ -5,10 +5,12 @@ const Counter = () => {
 
     const plus = () => {
         setCount(count + 1);
+        console.log(count)
     }
 
     const minus = () => {
         setCount(count - 1);
+        console.log(count)
     }
 
     return(
@@ -17,6 +19,7 @@ const Counter = () => {
             <h3>현재 카운트 : {count}</h3>
             <button onClick={plus}>+1</button>
             <button onClick={minus}>-1</button>
+            <hr/>
         </>
     )
 }
