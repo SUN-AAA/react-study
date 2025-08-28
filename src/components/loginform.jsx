@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import '../style/loginform.css'
 
 const LoginForm = () => {
     const [email, setemail] = useState('')
@@ -10,7 +11,7 @@ const LoginForm = () => {
     }
 
     return(
-        <div>
+        <div className='loginform'>
             <h1>사용자 입력 관리하기</h1>
             <from onChange={handleSubmit}>
                 <input
